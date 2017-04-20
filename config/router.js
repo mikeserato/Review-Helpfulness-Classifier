@@ -2,14 +2,11 @@
 var reviews = require('./../controllers/reviews');
 
 module.exports = function (router) {
-	// router.route('/degree-programs')
-	// 	.get(degreeProgram.find)
-	// 	.post(degreeProgram.insert)
-	// 	.delete(degreeProgram.remove);
-	//
-	// router.route('/degree-programs/:id')
-	// 	.get(degreeProgram.findOne)
-	// 	.put(degreeProgram.update);
+	router.route('/insert')
+		.post(reviews.insertReview);
+
+	router.route('/reviews')
+		.post(reviews.findReviews);
 
 	return router;
 };

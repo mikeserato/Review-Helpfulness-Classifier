@@ -1,3 +1,30 @@
 body{
-	font-family: "Tahoma", sans-serif;
+	/*font-family: "Tahoma", sans-serif;*/
+	background-color: #82b1ff !important;
+	/*background-color: black !important;*/
+}
+
+.title {
+	margin-top: 100px;
+	color: white;
+}
+
+.description, .searchbar, .footer {
+	margin-top: 50px;
+	color: white;
+}
+
+.form-control{
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.options {
+	margin-top: 10px;
+}
+
+.results {
+	margin-top: 50px;
+	/*margin-left: 50px;
+	margin-right: 50px;*/
 }

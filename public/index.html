@@ -4,27 +4,49 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 		<title>Review Helpfulness Classifier</title>
 		<link rel="stylesheet" href="style.css"/>
-		<link rel='stylesheet' href='bootstrap.css' />
-	</head>
-	<body>
-		<div>
-			<h2>Hello to Mike's SP!</h2>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-6">
-		    <div class="input-group">
-		      <input type="text" class="form-control" placeholder="Search for...">
-		      <span class="input-group-btn">
-		        <button class="btn btn-default" type="button">Go!</button>
-		      </span>
-		    </div>
-			</div>
-		</div>
-
-		<script src="jquery.min.js"></script>
-		<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.css"/>
+		<script src="jquery-3.2.1.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+		<script src="tether.min.js"></script>
 		<script src="bootstrap.js"></script>
 		<script src="script.js"> </script>
+	</head>
+	<body>
+		<div class="title">
+			<h1 class="text-center">SRC</h3>
+			<h3 class="text-center">Smartphone Review Classifier</h3>
+		</div>
+
+		<div class="description">
+			<p class="text-center">Still don't know which phone to buy? Find out which reviews are helpful to you!</p>
+		</div>
+
+		<form id="form">
+			<div class="input-group input-group-lg searchbar">
+			  <input required type="text" class="form-control product" placeholder="Enter product here!">
+			</div>
+
+			<div class="options text-center">
+				<button type="submit" class="btn btn-primary btn-lg get-review">Get Reviews</button>
+				<!-- <button type="button" class="btn btn-success btn-lg add-review">Add a Review</button> -->
+			</div>
+		</form>
+
+		<div class="results">
+
+			<h3 class="result_title text-center"> Reviews </h3>
+			<table class="table table-bordered table-hover">
+				<thead class="thead-inverse">
+			    <tr>
+							<th class="number">#</th>
+							<th class="website">Website</th>
+			        <th class="link">Link</th>
+			        <th class="classification">Classification</th>
+			    </tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
 	</body>
 </html>
