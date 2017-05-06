@@ -1,22 +1,26 @@
 body{
-	/*font-family: "Tahoma", sans-serif;*/
-	background-color: #82b1ff !important;
-	/*background-color: black !important;*/
+	background-image: url("/images/bg.jpg");
+	background-color: #1874cd;
 }
 
 .title {
 	margin-top: 100px;
 	color: white;
-}
-
-.description, .searchbar, .footer {
-	margin-top: 50px;
-	color: white;
+	border: 5px solid black;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: black;
+	padding: 20px;
+	border-radius: 25px;
 }
 
 .form-control{
 	margin-left: 200px;
 	margin-right: 200px;
+}
+
+#form{
+	margin-top: 70px;
 }
 
 .options {
@@ -25,6 +29,7 @@ body{
 
 .results {
 	margin-top: 50px;
-	/*margin-left: 50px;
-	margin-right: 50px;*/
+	margin-left: 50px;
+	margin-right: 50px;
+	display: none;
 }

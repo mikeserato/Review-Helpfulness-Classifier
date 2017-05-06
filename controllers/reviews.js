@@ -2,7 +2,7 @@ var db = require(__dirname + './../lib/mysql');
 
 // Find one degree program.
 exports.findReviews = function (req, res, next) {
-	db.query("SELECT brand,model,link,tree_decision FROM classifier WHERE brand=? and model=? ORDER BY tree_decision DESC", [req.body.brand, req.body.model],
+	db.query("SELECT website,brand,model,link,cluster FROM classifier WHERE brand=? and model=? ORDER BY subjectivity DESC", [req.body.brand, req.body.model],
 	function (err, rows) {
 		if(err) return(err);
 		if(rows.length === 0)
