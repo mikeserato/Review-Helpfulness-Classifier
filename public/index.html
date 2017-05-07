@@ -20,10 +20,10 @@
 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Websites</a>
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#websites">Websites</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#about">About</a>
 				</li>
 			</ul>
 		</nav>
@@ -58,5 +58,51 @@
 				</tbody>
 			</table>
 		</div>
+
+	   <!-- About Modal -->
+	   <div class="modal fade" id="about" role="dialog">
+	     <div class="modal-dialog">
+	       <div class="modal-content">
+	         <div class="modal-header">
+	           <h4 class="modal-title">About</h4>
+						 <button type="button" class="close" data-dismiss="modal">&times;</button>
+	         </div>
+	         <div class="modal-body text-center">
+	           <p>Smartphone Review Classifier (SRC) is a system </br> that classifies smartphone reviews into their level of helpfulness. </p>
+						 <p>This system was made by Mike Edward C. Serato </br> for his CMSC 190-2. (c) 2017 </p>
+
+	         </div>
+	         <div class="modal-footer">
+	           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	         </div>
+	       </div>
+
+	     </div>
+	   </div>
+
+		 <!-- Websites Modal -->
+	   <div class="modal fade" id="websites" role="dialog">
+	     <div class="modal-dialog">
+	       <div class="modal-content">
+	         <div class="modal-header">
+						 <h4 class="modal-title">Websites</h4>
+	           <button type="button" class="close" data-dismiss="modal">&times;</button>
+	         </div>
+	         <div class="modal-body text-center">
+	           <p> CNET (https://www.cnet.com/) </p>
+						 <p> Digital Trends (http://www.digitaltrends.com) </p>
+						 <p> Expert Reviews (http://www.expertreviews.co.uk) </p>
+						 <p> GSM Arena (http://www.gsmarena.com) </p>
+						 <p> Phone Arena (http://www.phonearena.com) </p>
+						 <p> TechRadar (http://www.techradar.com) </p>
+						 <p> Trusted Reviews (http://www.trustedreviews.com) </p>
+	         </div>
+	         <div class="modal-footer">
+	           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	         </div>
+	       </div>
+
+	     </div>
+	   </div>
 	</body>
 </html>
